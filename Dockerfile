@@ -1,5 +1,5 @@
 # ---------- Stage 1: Build ----------
-FROM python:3.11-slim AS builder
+FROM python:3.12-slim AS builder
 
 # Set working directory
 WORKDIR /app
@@ -14,7 +14,7 @@ COPY requirements.txt .
 RUN pip install --upgrade pip && pip install --prefix=/install -r requirements.txt
 
 # ---------- Stage 2: Runtime ----------
-FROM python:3.11-slim
+FROM python:3.12-slim
 
 # Create non-root user and group
 RUN groupadd -r worker && useradd -r -g worker worker
