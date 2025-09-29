@@ -1,0 +1,8 @@
+# Runtime dependency
+requests
+
+# Optional: linting and testing
+flake8
+
+# Optional: SBOM generation (if used)
+cyclonedx-bom

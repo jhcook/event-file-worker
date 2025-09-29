@@ -1,0 +1,18 @@
+[
+  {
+    "schemaVersion": "1.0",
+    "eventId": "abc123-def456",
+    "correlationId": "xyz789",
+    "timestamp": "2025-09-29T00:00:00Z",
+    "source": {
+      "provider": "aws",
+      "bucket": "source-bucket",
+      "key": "path/to/file.txt"
+    },
+    "destination": {
+      "provider": "gcp",
+      "bucket": "target-bucket",
+      "key": "path/to/file.txt"
+    }
+  }
+]
