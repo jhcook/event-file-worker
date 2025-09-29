@@ -39,7 +39,7 @@ jobs:
 
     - name: 🔍 Trivy filesystem scan (Python code)
       run: |
-        ./trivy fs . --severity HIGH,CRITICAL --exit-code 1
+        ./bin/trivy fs . --severity HIGH,CRITICAL --exit-code 1
 
     - name: 🐳 Build Docker image
       run: |
@@ -47,8 +47,8 @@ jobs:
 
     - name: 🔐 Trivy image scan
       run: |
-        ./trivy image worker --severity HIGH,CRITICAL --exit-code 1
+        ./bin/trivy image worker --severity HIGH,CRITICAL --exit-code 1
 
     - name: 📄 Optional SBOM generation
       run: |
-        ./trivy sbom --format cyclonedx --output sbom.json .
+        ./bin/trivy sbom --format cyclonedx --output sbom.json .
