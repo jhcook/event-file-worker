@@ -2,8 +2,6 @@
 
 A secure, testable Python worker that simulates cross-cloud file transfers triggered by events. Designed for DevSecOps validation with containerization, CI, and security scanning—no real cloud accounts required.
 
----
-
 ## Project Overview
 
 This worker includes:
@@ -14,8 +12,6 @@ This worker includes:
 - Dead Letter Queue (DLQ) routing
 - Containerization with multi-stage build and health check
 - CI pipeline with Trivy security scan
-
----
 
 ## 📦 Example Event
 
